@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -9,4 +9,91 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 /* Add styles here! */
+.max-width-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 60%);
+}
+
+header {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 6px solid hsl(0deg, 0%, 40%);
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main {
+  margin-top: 64px;
+}
+
+.intro-chunk {
+  max-width: 60%;
+  padding: 62px 0 32px;
+}
+
+.intro-chunk p {
+  font-size: 2.4rem;
+}
+
+main .card {
+  margin: 0 -24px;
+}
+
+.card {
+  padding: 24px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 6px solid hsl(0deg, 0%, 40%);
+}
+
+.indented-heading {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 32px;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 6px solid hsl(45deg, 100%, 40%);
+}
+
+.card .indented-heading {
+  margin: -16px 0 0 -32px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .max-width-wrapper {
+    max-width: none;
+  }
+
+  .intro-chunk {
+    max-width: 80%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  main .card {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-chunk {
+    max-width: none;
+  }
+}
